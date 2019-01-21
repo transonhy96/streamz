@@ -1,0 +1,44 @@
+{
+  "name": "streamz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "buefy": "^0.7.1",
+    "css-loader": "^2.0.1",
+    "flv.js": "^1.4.2",
+    "font-awesome": "^4.7.0",
+    "global": "^4.3.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "node-sass": "^4.10.0",
+    "register-service-worker": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "socket.io-client": "^2.2.0",
+    "v-lazy-image": "^1.2.2",
+    "vue": "^2.5.21",
+    "vue-bulma-switch": "^2.0.0-alpha.6",
+    "vue-burger-menu": "^1.0.8",
+    "vue-cli": "^2.9.6",
+    "vue-content-loader": "^0.2.1",
+    "vue-instantsearch": "^1.7.0",
+    "vue-lazy-image": "^1.2.0",
+    "vue-router": "^3.0.1",
+    "vue-socket.io": "^2.1.1-b",
+    "vue-video-player": "^5.0.2",
+    "vuedraggable": "^2.16.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-pwa": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "peerDependencies": {
+    "vue-template-compiler": "^2.5.17"
+  }
+}

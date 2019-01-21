@@ -1,0 +1,93 @@
+@import '../../styles/app';
+.tables-basic {
+    .table th {
+      font-size: $font-size-sm;
+    }
+  }
+.avatar{
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.22);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.22);
+    &:hover{
+        transform: scale(1.1);
+        transition: tranform .2s ease-in-out;
+    }
+}
+tr{
+    &:hover{
+        cursor: pointer;
+        .more{
+            transition: all ease-in-out 0.8s;
+            visibility: visible;
+        }
+    }
+}
+.red{
+    color:rebeccapurple;
+    background: rebeccapurple;
+    opacity: .1;
+}
+.more{
+    
+    padding:15px;
+    visibility: hidden;
+    float: right;
+    &:hover{
+        font-weight: 700;
+        
+    }
+}
+.holder{
+    position: relative;
+    .cover{
+        position: absolute;
+        top:0;
+        left:0;
+        
+    }
+}
+.hoverIn{
+    background: rgba(0, 0, 0, 0.2);
+}
+.hoverIcon{
+    
+    &:hover{
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+    }   
+}
+.right{
+    background: rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.v-lazy-image {
+
+    filter: blur(5px);
+    transition: filter 0.7s;
+  }
+  
+  .v-lazy-image-loaded {
+    filter: blur(0);
+  }
+@keyframes rotate{
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(-90deg);}
+    50%  {transform: rotate(-180deg);}
+    75%  {transform: rotate(-270deg);}
+    100% {transform: rotate(-360deg);}
+
+}
+@keyframes rotateBack{
+    0%   {transform: rotate(-120deg);}
+    25%  {transform: rotate(-90deg);}
+    50%  {transform: rotate(-60deg);}
+    75%  {transform: rotate(-30deg);}
+    100% {transform: rotate(0deg);}
+
+}
